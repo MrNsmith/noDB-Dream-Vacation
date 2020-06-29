@@ -65,11 +65,6 @@ module.exports = {
     
 
     
-    deleteVaca: (req, res) => {
-        const {id} = req.params
-        const  index =  destinations.findIndex(destination => destination.id === +id)
-        destinations.splice(index, 1)
-        res.status(200).send(destinations)
-    }
+    
 
 }

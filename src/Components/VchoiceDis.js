@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 class VchoiceDis extends Component{
     handleChoice=()=>{
-        const {postDestFn, dest} = this.props;
+        const {postDestFn, dest,resetFn} = this.props;
         let destPick = {
             name: dest.name,
             img: dest.img,
             rating: dest.rating
         }
         postDestFn(destPick)
-        this.props.resetFn()
+        resetFn()
     }
     render(){
         const {dest} = this.props;//passed down form Vchoice
