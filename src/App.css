@@ -2,19 +2,56 @@
   text-align: center;
 }
 .dest-flex{
+  padding-bottom: 34px;
   display: flex;
+  box-sizing: border-box;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: center;
-  border:35px solid black;
+  border:25px solid black;
+  
   
 }
+button{
+  margin: 5px;
+  width: 75px;
+  background-color: black;
+  color: white;
+}
+.vaca-rating{
+  position: relative;
+  width: 120px;
+  left: 65px;
+  border: 5px double black;
+}
+.vaca-rating2{
+  position: relative;
+  width: 120px;
+  left: 310px;
+  border: 5px double black;
+}
+.vaca-name {
+  
+  margin-top: 2px;
+  
+  border:5px solid black
+}
+
+.transition{
+  transition: 2s;
+}
+.transition:hover{
+  transform: scale(1.25);
+} 
+
 .vaca-pics{
   margin-top: 50px;
   width: 250px;
   height: 250px;
   border:5px solid black;
+
 }
+
 .choice-pic{
   margin-top:50px;
   width: 750px;

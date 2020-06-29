@@ -31,15 +31,15 @@ class VoptionDis extends Component{
                     <input 
                     onChange={e=> this.handleInput(e.target.value) } 
                     placeholder="out of 10 stars"/>
-                    <button 
+                    <button className='button'
                     onClick={() => this.handleEdit(this.props.dest.id)}>Update</button>
                     </div>
 
                 )
                 : (
                     <div>
-                        <p>{this.props.dest.name}</p>
-                        <p>{this.props.dest.rating}/ 10 stars</p>
+                        <p className="vaca-name">{this.props.dest.name}</p>
+                        <p className="vaca-rating2">{this.props.dest.rating}/ 10 stars</p>
                         <button onClick={this.handleToggle}>New Rating</button>
 
                     </div>

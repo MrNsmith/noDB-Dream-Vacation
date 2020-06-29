@@ -14,7 +14,8 @@ const Voption = props =>{
     return(
         
         <div >
-            <h1>Please rate your dream vacation</h1>
+            <h1>How did you enjoy it?</h1>
+            <h2>Please rate your dream vacation</h2>
             <div className='dest-flex'>{mappedDest}</div>
             
         </div>

@@ -14,10 +14,10 @@ class VchoiceDis extends Component{
     render(){
         const {dest} = this.props;//passed down form Vchoice
         return(
-            <div onClick={this.handleChoice}>
+            <div className='transition' onClick={this.handleChoice}>
                 <img className='vaca-pics'src= {dest.img} alt = {dest.name}/>
-                <p>{dest.name}</p>
-                <p>Rating: {dest.rating} /10 stars</p>
+                <p className='vaca-name'>{dest.name}</p>
+                <p className='vaca-rating'>Rating: {dest.rating} /10 stars</p>
             </div>
         )
     }
